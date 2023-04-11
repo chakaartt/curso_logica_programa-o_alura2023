@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+<script>
+
+  function pulaLinha() {
+
+  document.write("<br>");
+  document.write("<br>");
+  }
+
+  function mostra(frase) {
+
+  document.write(frase);
+  pulaLinha();
+  }
+
+
+  function sorteio(n){
+
+    return Math.round(Math.random() * n)
+
+  }
+
+let numeroPensado = sorteio(100)
+
+
+let escolhaNumero = parseInt(prompt("Digite um numero "))
+
+  if(escolhaNumero == numeroPensado){
+    mostra("Parabéns,  Você foi sorteado")
+  }else {
+    mostra("Desculpa ,Você não foi sorteado! ")
+  }
+
+
+</script>
