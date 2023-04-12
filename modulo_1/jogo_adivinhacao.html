@@ -4,24 +4,35 @@
 
   function pulaLinha() {
 
-      document.write("<br>");
-      document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
   }
 
   function mostra(frase) {
 
-      document.write(frase);
-      pulaLinha();
+    document.write(frase);
+    pulaLinha();
   }
 
-let numeroPensado = Math.round(Math.random() * 100);
+  let numeroPensado = Math.round(Math.random() * 10);
 
-let chute = parseInt(prompt("digite um numero "));
+  let tentativas = 1;
 
-  if(chute == numeroPensado){
-    mostra("O numero pensando é " + numeroPensado + ", você acertou.")
-  }else {
-    mostra("Você errou  o numero é " + numeroPensado)
+  while (tentativas <= 3) {
+
+    let chute = parseInt(prompt("digite um numero "));
+
+    if (chute == numeroPensado) {
+      mostra("Você ACERTOU, o número pensado era " + numeroPensado)
+      break;
+    } else {
+      mostra("Você ERROU ")
+    }
+
+    tentativas++;
+
   }
+
+
 
 </script>
