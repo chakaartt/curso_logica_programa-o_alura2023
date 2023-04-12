@@ -20,15 +20,15 @@
 
   }
 
-let numeroPensado = sorteio(100)
+let numeroPensado = sorteio(10)
 
 
 let escolhaNumero = parseInt(prompt("Digite um numero "))
 
   if(escolhaNumero == numeroPensado){
-    mostra("Parabéns,  Você foi sorteado")
+    mostra("Parabéns,  Você foi sorteado" + numeroPensado)
   }else {
-    mostra("Desculpa ,Você não foi sorteado! ")
+    mostra("Desculpa ,Você não foi sorteado! " + numeroPensado)
   }
 
 
